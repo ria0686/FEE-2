@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        form
+        {
+            padding: 5px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <legend>
+            <h2>Registration Form</h2>
+        </legend>
+        <label for="fullname">Name: </label>
+        <input type="text" required><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" required><br>
+        <label for="password">Password: </label>
+        <input type="password" required><br>
+        <label for="confirmpassword">Confirmed Password: </label>
+        <input type="password" id="password" required><br>
+        <label for="age">Age: </label>
+        <input type="number" min="18" max="99"><br>
+        <label for="checkbox">Accept terms</label>
+        <input type="checkbox" required><br>
+        <button id="btn">Submit</button>
+    </form>
+</body>
+</html>

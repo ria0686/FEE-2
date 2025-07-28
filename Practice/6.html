@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        *
+        {
+            scroll-behavior: smooth;
+        }
+        .navbar
+        {
+            background-color: aqua;
+            width:100vw;
+            padding-bottom: 20px;
+        }
+        #s1
+        {
+            width:100vw;
+            height:100vh;
+            background-color: yellow;
+            margin: 0px;
+        }
+        #s1 p{
+            color: pink;
+        }
+        #s1 > div > p
+        {
+            color:blue;
+        }
+        #s2
+        {
+            width:100vw;
+            height:100vh;
+            background-color: green;
+            margin: 0px;
+        }
+        #s3
+        {
+            width:100vw;
+            height:100vh;
+            background-color:red;
+            margin: 0px;
+        }
+        .btn
+        {
+            padding: 10px 20px;
+            border-radius:10px;
+            background-color: aquamarine;
+        }
+        .btn:hover
+        {
+            background-color: transparent;
+        }
+        /* .btn :disabled
+        {
+            background-color: red;
+        } */
+        a:active
+        {
+            color:rgb(226, 128, 43);
+        }
+        input:focus{
+            border:2px solid green;
+        }
+        a[target="_blank"]
+        {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#s1">Section 1</a>
+        <a href="#s2">Section 2</a>
+        <a href="#s3">Section 3</a>
+    </div>
+    <div id="s1">
+        Section 1
+        <a href="https://youtube.com" target="_blank">Go to Youtube</a>
+        <a href="https://youtube.com" target="_top">Go to Youtube</a>
+        <p>Para1</p>
+        <p>Para2</p>
+        <p>Para3</p>
+        <div>
+            <p>Para4</p>
+            <div>
+                Para5
+            </div>
+        </div>
+    </div>
+    <div id="s2">
+        Section 2
+        <input>
+        <button class="btn">
+            Submit
+        </button>
+    </div>
+    <div id="s3">
+        Section 3
+    </div>
+</body>
+</html>
