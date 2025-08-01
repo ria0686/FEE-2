@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        h1
+        {
+            background-color: aqua;
+            display: block;
+            width: 100vw;
+            text-align: center;
+            padding: 10px;
+        }
+        audio
+        {
+            align-self: bottom;
+            background-color: blueviolet;
+            display: inline;
+            align-content: center;
+        }
+        footer
+        {
+            align-items:last baseline;
+        }
+        video
+        {
+            z-index: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Portfolio Website
+    </h1>
+    <footer>
+    <audio controls autoplay loop muted preload="metadata">
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    
+    </footer>
+    <video>
+        <source src="video.mp4" controls autoplay loop muted >
+        <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="subtitles">
+    </video>
+</body>
+
+
+</html>
