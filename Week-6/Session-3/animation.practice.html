@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes myAnimation{
+            0%
+            {
+                background-color: antiquewhite;
+            }
+        
+    }
+    .box{
+        height:40px;
+        width:40px;
+        background-color: aqua;
+        animation:myAnimation infinite;
+        animation-duration:5s; 
+    }
+    .box:hover
+    {
+
+    }
+    @keyframes slideAndFade
+    {
+        0%{
+            transform:translateX(0px)rotate(0deg);
+        }
+        50%
+        {
+            transform: translateX(400px) rotate(360deg);
+        }
+        100%
+        {
+            transform:translate(0px) rotate(0deg);
+        }
+    }
+    .animated-box
+    {
+        animation: slideAndFade 7s linear infinite;
+        height:50px;
+        width:50px;
+        /* border-radius: 50%; */
+        border: 4px red;
+        background-color: red;
+    }
+    </style>
+</head>
+<body>
+    <div class="animated-box"></div>
+    <div class="box"></div>
+</body>
+</html>
